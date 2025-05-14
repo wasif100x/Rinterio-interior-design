@@ -4,8 +4,121 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+    <!--daisyUI CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Tailwind CSS CDN -->
+     <script src="https://cdn.tailwindcss.com"></script>
+     <!--Tailwind custom color -->
+       <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'custom-green': '#ABEF5F',
+            'custom-lightgreen': '#ABEF5F95',
+            'custom-background': '#FFFFF0',
+          }
+        }
+      }
+    }
+     </script>
+     <!--google font CDN-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+     <!--google manrope font-->
+     <style>
+        .manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+     </style>
+        <!--font awesome CDN-->
+        <script src="https://kit.fontawesome.com/1476e5a826.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    
+<body class="manrope bg-custom-background">
+    <!--header part-->
+    <header class="md:container mx-auto pt-4">
+            <!--nav part-->
+        <nav>
+            <div class="navbar">
+                <!--the name and logo-->
+   <div class="navbar-start">
+    <div class="bg-custom-green rounded-full p-2 flex items-center justify-center mr-2">
+        <i class="fa-solid fa-arrow-right -rotate-40"></i>
+    </div>
+    <a class="font-bold text-3xl">Rinterio</a>
+   </div>
+   <!--nav content-->
+  <div class="navbar-center hidden lg:flex ">
+    <ul class="menu menu-horizontal px-1 gap-5">
+      <li><a class="font-bold">Home</a></li>
+      <li><a>Services</a></li>
+      <li><a>Portfolio</a></li>
+      <li><a>Blogs</a></li>
+      <li><a>Contact Us</a></li>
+    </ul>
+  </div>
+  <!--nav ending -->
+  <div class="navbar-end">
+    <div class="flex items-center justify-center gap-3 mr-2">
+        <div class="bg-white rounded-full p-2 flex items-center justify-center "><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="bg-white rounded-full p-2 flex items-center justify-center"><i class="fa-solid fa-cart-shopping"></i></div>
+    </div>
+    <div>
+      <div class="bg-custom-green rounded-full p-3 flex items-center justify-center mr-2">
+                <a href="" class="bg-custom-green mr-2 font-bold  ">Book Consult</a>
+        <i class="fa-solid fa-arrow-right -rotate-40 text-white bg-black p-1 rounded-full"></i>
+
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li><a class="font-bold">Home</a></li>
+        <li><a>Services</a></li>
+        <li><a>Portfolio</a></li>
+        <li><a>Blogs</a></li>
+        <li><a>Contact Us</a></li>
+      </ul>
+    </div>
+</div>
+        </nav>
+        <!--Hero Section-->
+        <div class="hero flex flex-col">
+          <!--hero image-->
+          <div>
+            <img src="./assets/banner.png" alt="Banner Image" >
+          </div>
+          <!--hero content-->
+  <div class="text-center flex flex-col items-center justify-center">
+      <h1 class="text-6xl font-extrabold">A barn house of this design has a<br> striking appearance</h1>
+      <p class="py-6">
+        A place where your ideas come to life.We design not only houses but also<br> your dreams and aspirations. 
+      </p>
+          <!--button-->
+      <div class="bg-custom-lightgreen w-40 h-10 rounded-full p-3 flex items-center justify-center  mr-2">
+        <div><a href="" class="mr-2 font-bold  ">View Details</a></div>
+        <div><i class="fa-solid fa-arrow-right -rotate-40 bg-custom-green p-1 rounded-full"></i></div>
+                
+        
+
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+    </header>
+    <main>
+      
+
+    </main>
+    <footer></footer>
 </body>
 </html>
